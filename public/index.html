@@ -21,6 +21,165 @@
     />
 
     <style>
+              /* Estilos adicionais para as mensagens */
+      .w-form-done,
+      .w-form-fail {
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+        text-align: center;
+        display: none;
+      }
+
+      .w-form-done {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+
+      .w-form-fail {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+
+      .mensagem-sucesso {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* Estilos de responsividade adicionais */
+      /* Estilos para telas maiores (padrão) - Apenas ajustes finos */
+      @media (min-width: 993px) {
+        .topo {
+          margin: -1% auto 0;
+          max-width: 1000px;
+        }
+
+        .div-azul {
+          width: 46%;
+          height: 93.7vh;
+        }
+
+        .div-formulario {
+          width: 54%;
+          float: right;
+          margin: 5% 0 0;
+          padding: 20px 40px;
+        }
+      }
+
+      /* Telas médias (tablets e dispositivos similares) */
+      @media (max-width: 992px) {
+        .topo {
+          margin: 0 auto;
+          height: auto;
+          max-width: 100%;
+        }
+
+        .div-azul {
+          float: none;
+          width: 100%;
+          height: auto;
+          padding: 40px 20px;
+        }
+
+        .header-logo {
+          width: 200px;
+          max-width: 80%;
+          margin-bottom: 0;
+        }
+
+        .div-formulario {
+          float: none;
+          width: 100%;
+          margin: 0;
+          padding: 30px;
+        }
+
+        .div-entrar, .div-cadastrar {
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      /* Telas pequenas (smartphones) */
+      @media (max-width: 576px) {
+        .header-title {
+          font-size: 20px;
+          padding: 8px 0;
+        }
+
+        .div-azul {
+          padding: 30px 15px;
+        }
+
+        .div-formulario {
+          padding: 20px 15px;
+        }
+
+        .text-field-entrar {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+
+        .margem-right {
+          margin-right: 0;
+        }
+
+        .div-text-field {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .link-esqueceu-sua-senha {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+
+        .botao-entrar, .botao-cadastrar {
+          float: none;
+          width: 100%;
+          display: block;
+        }
+
+        .cadastre-se {
+          font-size: 20px;
+          text-align: center;
+        }
+
+        .w-form-done, .w-form-fail {
+          padding: 10px;
+          margin: 15px 0;
+          font-size: 14px;
+        }
+      }
+
+      /* Telas muito pequenas */
+      @media (max-width: 340px) {
+        .header-title {
+          font-size: 18px;
+          padding: 6px 0;
+        }
+
+        .text-field-entrar, .text-field-cadastrar {
+          padding: 10px;
+          font-size: 13px;
+        }
+
+        .botao-entrar, .botao-cadastrar {
+          padding: 10px 20px;
+          font-size: 13px;
+        }
+
+        .cadastre-se {
+          font-size: 18px;
+        }
+      }
+
       /* Estilos adicionais para as mensagens */
       .w-form-done,
       .w-form-fail {

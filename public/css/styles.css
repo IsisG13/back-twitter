@@ -6,6 +6,138 @@
   font-family: 'Roboto', sans-serif;
 }
 
+@media (min-width: 993px) {
+    .topo {
+      margin: -1% auto 0;
+      max-width: 1000px;
+    }
+
+    .div-azul {
+      width: 46%;
+      height: 93.7vh;
+    }
+
+    .div-formulario {
+      width: 54%;
+      float: right;
+      margin: 5% 0 0;
+      padding: 20px 40px;
+    }
+  }
+
+  /* Telas médias (tablets e dispositivos similares) */
+@media (max-width: 992px) {
+    .topo {
+      margin: 0 auto;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .div-azul {
+      float: none;
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+    }
+
+    .header-logo {
+      width: 200px;
+      max-width: 80%;
+      margin-bottom: 0;
+    }
+
+    .div-formulario {
+      float: none;
+      width: 100%;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .div-entrar, .div-cadastrar {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 576px) {
+    .header-title {
+      font-size: 20px;
+      padding: 8px 0;
+    }
+
+    .div-azul {
+      padding: 30px 15px;
+    }
+
+    .div-formulario {
+      padding: 20px 15px;
+    }
+
+    .text-field-entrar {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    .margem-right {
+      margin-right: 0;
+    }
+
+    .div-text-field {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .link-esqueceu-sua-senha {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .botao-entrar, .botao-cadastrar {
+      float: none;
+      width: 100%;
+      display: block;
+    }
+
+    .cadastre-se {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .w-form-done, .w-form-fail {
+      padding: 10px;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+  }
+
+
+/* Telas muito pequenas */
+@media (max-width: 340px) {
+    .header-title {
+      font-size: 18px;
+      padding: 6px 0;
+    }
+
+    .text-field-entrar, .text-field-cadastrar {
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .botao-entrar, .botao-cadastrar {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+
+    .cadastre-se {
+      font-size: 18px;
+    }
+  }
+
+
 .modal {
   position: fixed;
   top: 0;
@@ -58,17 +190,6 @@ body {
   width: 99%;
   height: auto;
   margin-bottom: 20px;
-}
-
-/* Página de Login e Cadastro */
-.topo {
-  margin: -1% 0% 0 0;
-  height: 93.5vh;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 1000px;
 }
 
 .w-clearfix::after {
@@ -411,7 +532,7 @@ body {
   background-color: #0c85d0;
 }
 
-.mensagem-sucesso, 
+.mensagem-sucesso,
 .mensagem-erro {
   display: none;
   font-size: 14px;
@@ -573,17 +694,17 @@ body {
     float: none;
     width: 100%;
   }
-  
+
   .div-perfil {
     margin-bottom: 20px;
     position: static;
   }
-  
+
   .div-azul, .div-formulario {
     float: none;
     width: 100%;
   }
-  
+
   .div-azul {
     min-height: auto;
     padding: 20px;
@@ -595,13 +716,13 @@ body {
     width: 100%;
     margin-right: 0;
   }
-  
+
   .botao-entrar, .botao-cadastrar, .botao-publicar {
     float: none;
     width: 100%;
     margin-top: 10px;
   }
-  
+
   .div-text-field {
     text-align: center;
   }
