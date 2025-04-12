@@ -2,7 +2,7 @@
 
 Este projeto é um clone do Twitter desenvolvido como desafio da empresa Neex Brasil. A aplicação conta com funcionalidades básicas de uma rede social, incluindo autenticação de usuários, publicação de tweets, comentários e sistema de seguidores.
 
-##### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 **Backend:**
 - Laravel: Framework PHP utilizado para desenvolver a API RESTful
 - Laravel Cloud: Plataforma utilizada para deploy da aplicação
