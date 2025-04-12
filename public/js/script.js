@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 a
-      fetch("http://localhost:8000/api/login", {
+      fetch("https://back-twitter-main-gwz7pb.laravel.cloud/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +70,7 @@ if (registerForm) {
       return;
     }
 
-    fetch("http://localhost:8000/api/register", {
+    fetch("https://back-twitter-main-gwz7pb.laravel.cloud/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

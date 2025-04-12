@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     botaoLogout.addEventListener("click", function (event) {
       event.preventDefault();
 
-      fetch("http://localhost:8000/api/logout", {
+      fetch("https://back-twitter-main-gwz7pb.laravel.cloud/api/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Função para carregar o feed de tweets
   function carregarFeed() {
-    fetch("http://localhost:8000/api/tweets", {
+    fetch("https://back-twitter-main-gwz7pb.laravel.cloud/api/tweets", {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mensagemSucesso.style.display = "none";
     mensagemErro.style.display = "none";
 
-    fetch("http://localhost:8000/api/tweets", {
+    fetch("https://back-twitter-main-gwz7pb.laravel.cloud/api/tweets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -263,7 +263,7 @@ function carregarPerfilUsuario(usuarioId) {
     return;
   }
 
-  fetch(`http://localhost:8000/api/users/${usuarioId}`, {
+  fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/users/${usuarioId}`, {
     headers: {
       Authorization: `Bearer ${token}`,
       Accept: "application/json",
@@ -323,7 +323,7 @@ function carregarPerfilUsuario(usuarioId) {
 
   // Função para carregar a contagem de seguidores
   function carregarSeguidores(usuarioId) {
-    fetch(`http://localhost:8000/api/users/${usuarioId}/followers`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/users/${usuarioId}/followers`, {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
@@ -350,7 +350,7 @@ function carregarPerfilUsuario(usuarioId) {
 
   // Função para carregar a contagem de seguindo
   function carregarSeguindo(usuarioId) {
-    fetch(`http://localhost:8000/api/users/${usuarioId}/following`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/users/${usuarioId}/following`, {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
@@ -377,7 +377,7 @@ function carregarPerfilUsuario(usuarioId) {
 
   // Função para verificar se o usuário atual já segue outro usuário
   function verificarSeguimento(usuarioId) {
-    fetch(`http://localhost:8000/api/users/${userId}/following`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/users/${userId}/following`, {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
@@ -436,7 +436,7 @@ function carregarPerfilUsuario(usuarioId) {
   // Função para seguir um usuário
   function seguirUsuario(usuarioId) {
     alert('Seguir');
-    fetch(`http://localhost:8000/api/users/${usuarioId}/follow`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/users/${usuarioId}/follow`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -470,7 +470,7 @@ function carregarPerfilUsuario(usuarioId) {
 
   // Função para deixar de seguir um usuário
   function deixarDeSeguirUsuario(usuarioId) {
-    fetch(`http://localhost:8000/api/users/${usuarioId}/unfollow`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/users/${usuarioId}/unfollow`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -504,7 +504,7 @@ function carregarPerfilUsuario(usuarioId) {
 
   // Função para carregar comentários de um tweet
   function carregarComentarios(tweetId, container) {
-    fetch(`http://localhost:8000/api/tweets/${tweetId}/comments`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/tweets/${tweetId}/comments`, {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
@@ -567,7 +567,7 @@ function carregarPerfilUsuario(usuarioId) {
 
   // Função para comentar em um tweet
   function comentarTweet(tweetId, conteudo, container) {
-    fetch(`http://localhost:8000/api/tweets/${tweetId}/comments`, {
+    fetch(`https://back-twitter-main-gwz7pb.laravel.cloud/api/tweets/${tweetId}/comments`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
