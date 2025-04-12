@@ -81,10 +81,10 @@ A aplicação foi desenvolvida com foco em responsividade, adaptando-se a difere
 
 ## Como Executar Localmente
 
-1.Clone o repositório: ```git clone https://github.com/IsisG13/back-twitter.git```
-2.Navegue até a pasta do projeto
-3.Abra o arquivo index.html em um navegador para acessar a tela de login
-4.Crie uma conta ou faça login com credenciais existentes
+-  Clone o repositório: ```git clone https://github.com/IsisG13/back-twitter.git```
+-  Navegue até a pasta do projeto
+-  Abra o arquivo index.html em um navegador para acessar a tela de login
+-  Crie uma conta ou faça login com credenciais existentes
 
 ## Considerações Finais
 Este projeto demonstra a integração entre um frontend desenvolvido com tecnologias web básicas (HTML, CSS e JavaScript) e um backend robusto construído com Laravel, resultando em uma aplicação completa que simula as principais funcionalidades do Twitter.
